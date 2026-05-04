@@ -6,7 +6,7 @@ namespace PRODUCTMANAGEMENTAPI.Controllers;
 
  [ApiController]
  [Route("api/[controller]")]
-public class ProuductController(IProductInterface productInterface): ControllerBase{
+public class ProductController(IProductInterface productInterface): ControllerBase{
     private readonly IProductInterface _productInterface=productInterface;
 
    

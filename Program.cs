@@ -14,5 +14,6 @@ builder.Services.AddScoped<IProductInterface,ProudctService>();
 
 var app = builder.Build();
 
+app.MapControllers();
 
 app.Run();
