@@ -1,6 +1,7 @@
-namespace PRODUCTMANAGEMENTAPI.Models;
+namespace PRODUCTMANAGEMENTAPI.DTOS;
 
-public class Product{
+public class ProductCreateDto
+{
     public required int Id{get;set;}
     public required String Title{get;set;}
     public required int Quantity{get;set;}
