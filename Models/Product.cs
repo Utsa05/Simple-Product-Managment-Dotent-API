@@ -1,11 +1,12 @@
 namespace PRODUCTMANAGEMENTAPI.Models;
 
 public class Product{
-    public required int Id{get;set;}
+    public Guid  Id{get;set;}=Guid.NewGuid();
     public required String Title{get;set;}
     public required int Quantity{get;set;}
     public required double Price{get;set;}
     public  int Discount{get;set;}
     public required String BrandName{get;set;}
-    public required DateTime CreatedTime{get;set;}
+    public  DateTime CreatedTime{get;set;} = DateTime.UtcNow;
+
 }
